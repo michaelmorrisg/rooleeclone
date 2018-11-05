@@ -6,13 +6,13 @@ class MainNav extends Component {
 
     render(){
         return(
-            <div>
+            <div className="MainNav-main">
                 <div className="MainNav-row1">
                     <p><a href="">sign in</a> or <a href="">create an account</a></p>
                     <p>My Cart</p>
                 </div>
                 <div className="MainNav-row2">
-                    <h1>ROOLEE</h1>
+                    <p>CLONE-EE</p>
                 </div>
                 <div className="MainNav-row3">
                     <nav>

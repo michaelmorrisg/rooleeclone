@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './reset.css'
 import './App.css';
 import TopMessage from './TopMessage/TopMessage'
 import MainNav from './MainNav/MainNav'

@@ -1,3 +1,9 @@
 .TopMessage-main {
     border-bottom: 1px solid #d69b5c;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    font-size: 13px;
 }
