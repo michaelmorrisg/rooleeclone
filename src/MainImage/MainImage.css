@@ -3,7 +3,6 @@
     width: 95%;
     margin: 0px auto;
     /* background-image: url('../Assets/watches.jpg'); */
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    border-bottom: 1px solid #d69b5c;
 }

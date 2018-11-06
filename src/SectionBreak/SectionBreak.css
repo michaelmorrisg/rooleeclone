@@ -1,17 +1,22 @@
 .SectionBreak-main {
     padding-top: 30px;
     padding-bottom: 30px;
-    height: 15vh;
+    height: 13vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 .SectionBreak-lineOne{
     font-family: 'Times' !important;
     font-size: 18pt;
     font-style: italic;
-    line-height: 2em;
+    line-height: 1em;
+    padding-bottom: .5em;
+}
+.SectionBreak-lineOne > h4 {
+    
+
 }
 .SectionBreak-lineTwo {
     font-size: 22pt;

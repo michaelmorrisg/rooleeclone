@@ -1,12 +1,11 @@
 import React from 'react'
 import './MainImage.css'
-import image from '../Assets/watches.jpg'
 
-export default function MainImage(){
+export default function MainImage(props){
 
     return(
-        <div className="MainImage-main" style={{backgroundImage: `url(${image})`}}>
-
+        <div className="MainImage-main" style={{backgroundImage: `url(${props.image})`}}>
+        
         </div>
     )
 }

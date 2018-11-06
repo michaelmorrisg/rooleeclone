@@ -4,8 +4,8 @@ import "./SectionBreak.css"
 export default function SectionBreak(props){
     return (
         <div className="SectionBreak-main">
-            <p className="SectionBreak-lineOne">{props.lineOne}</p>
-            <p className="SectionBreak-lineTwo">{props.lineTwo}</p>
+            <h4 className="SectionBreak-lineOne">{props.lineOne}</h4>
+            <h2 className="SectionBreak-lineTwo">{props.lineTwo}</h2>
         </div>
     )
 }
