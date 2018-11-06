@@ -9,9 +9,11 @@ import MainImage from './MainImage/MainImage'
 import Categories from './Categories/Categories'
 import watches from './Assets/watches.jpg'
 import mom from './Assets/mom.jpg'
+import familyBusiness from './Assets/family_business.jpg'
 import GoldenBorder from './GoldenBorder/GoldenBorder'
 import ChatBubble from './ChatBubble/ChatBubble'
 import HandpickedOutfits from './HandpickedOutfits/HandpickedOutfits'
+import SecondaryCategories from './SecondaryCategories/SecondaryCategories'
 
 class App extends Component {
   render() {
@@ -32,6 +34,11 @@ class App extends Component {
         <GoldenBorder />
         <SectionBreak lineOne="did you know we carry" lineTwo="TREASURES FOR FAMILY & HOME"/>
         <MainImage image={mom}/>
+        <SecondaryCategories />
+        <GoldenBorder />
+        <MainImage image={familyBusiness}/>
+        <GoldenBorder />
+        <SectionBreak lineOne="recently on" lineTwo="@ROOLEE"/>
       </div>
     );
   }
