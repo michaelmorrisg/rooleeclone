@@ -14,7 +14,7 @@ a{
 .MainNav-row1 {
     display: flex;
     justify-content: flex-end;
-    width: 94%;
+    width: 95%;
     margin: 0px auto;
     font-size: 13px;
     font-style: italic;
@@ -40,7 +40,7 @@ a{
 .MainNav-row3 ul {
     display: flex;
     list-style-type: none;
-    width: 94%;
+    width: 95%;
     margin: 0px auto;
 }
 .MainNav-row3 li {
