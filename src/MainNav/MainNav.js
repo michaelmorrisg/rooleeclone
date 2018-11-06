@@ -1,5 +1,10 @@
 import React, {Component} from 'react'
 import './MainNav.css'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faShoppingCart, faAngleDown } from '@fortawesome/free-solid-svg-icons'
+
+library.add(faShoppingCart, faAngleDown)
 
 class MainNav extends Component {
 
@@ -8,8 +13,9 @@ class MainNav extends Component {
         return(
             <div className="MainNav-main">
                 <div className="MainNav-row1">
-                    <p><a href="">sign in</a> or <a href="">create an account</a></p>
+                    <p><a href="">sign in</a><span>or</span><a href="">create an account</a></p>
                     <p>My Cart</p>
+                    <FontAwesomeIcon id="shopping-cart-icon" icon="shopping-cart" color="black"/>
                 </div>
                 <div className="MainNav-row2">
                     <p>CLONE-EE</p>

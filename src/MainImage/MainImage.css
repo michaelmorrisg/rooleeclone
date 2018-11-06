@@ -1,0 +1,9 @@
+.MainImage-main{
+    height: 91vh;
+    width: 94%;
+    margin: 0px auto;
+    /* background-image: url('../Assets/watches.jpg'); */
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid #d69b5c;
+}

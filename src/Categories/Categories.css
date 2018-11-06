@@ -1,0 +1,48 @@
+.Categories-main {
+    height: 133vh;
+    width: 94%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.Categories-row1 {
+    height: 48.5%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.Categories-row1-left{
+    background-image: url('../Assets/new-arrivals.jpg');
+    height: 100%;
+    width: 49%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.Categories-row1-right{
+    background-image: url('../Assets/dresses.jpg');
+    height: 100%;
+    width: 49%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.Categories-row2 {
+    height: 48.5%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.Categories-row2-left{
+    background-image: url('../Assets/tops.jpg');
+    height: 100%;
+    width: 49%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.Categories-row2-right{
+    background-image: url('../Assets/shoes.jpg');
+    height: 100%;
+    width: 49%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}

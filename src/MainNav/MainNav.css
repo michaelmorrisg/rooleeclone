@@ -1,3 +1,8 @@
+a{
+    color: #d69b5c;
+    text-decoration: none;
+    font-style: italic;
+}
 .MainNav-main {
     height: 20vh;
     border-bottom: 1px solid #d69b5c;
@@ -9,18 +14,33 @@
 .MainNav-row1 {
     display: flex;
     justify-content: flex-end;
-    width: 92%;
+    width: 94%;
     margin: 0px auto;
+    font-size: 13px;
+    font-style: italic;
+}
+.MainNav-row1 > p {
+    padding-left: 20px;
+}
+.MainNav-row1 span {
+    padding: 0px 10px;
 }
 .MainNav-row2 {
-    text-align: flex-start;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
     font-size: 60px;
     font-weight: 300;
+    position: relative;
+    top: -15px;
+}
+#shopping-cart-icon {
+    margin-left: 5px;
 }
 .MainNav-row3 ul {
     display: flex;
     list-style-type: none;
-    width: 92%;
+    width: 94%;
     margin: 0px auto;
 }
 .MainNav-row3 li {
