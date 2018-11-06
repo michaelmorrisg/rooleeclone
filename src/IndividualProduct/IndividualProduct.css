@@ -1,0 +1,18 @@
+.IndividualProduct-main {
+    width: 24%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.IndividualProduct-image {
+    height: 87%;
+    width: 100%;
+    background-size: cover;
+}
+.IndividualProduct-title {
+    font-size: 20px;
+}
+.IndividualProduct-main a {
+    font-family: Times !important;
+}

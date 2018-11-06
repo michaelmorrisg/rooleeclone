@@ -9,11 +9,14 @@ import MainImage from './MainImage/MainImage'
 import Categories from './Categories/Categories'
 import watches from './Assets/watches.jpg'
 import GoldenBorder from './GoldenBorder/GoldenBorder'
+import ChatBubble from './ChatBubble/ChatBubble'
+import HandpickedOutfits from './HandpickedOutfits/HandpickedOutfits'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
+        <ChatBubble />
         <TopMessage />
         <MainNav />
         <MainCarousel />
@@ -23,6 +26,7 @@ class App extends Component {
         <SectionBreak lineOne="browse through" lineTwo="OUR FAVORITE CATEGORIES"/>
         <Categories />
         <SectionBreak lineOne="just for you:" lineTwo="HANDPICKED OUTFITS"/>
+        <HandpickedOutfits />
       </div>
     );
   }
