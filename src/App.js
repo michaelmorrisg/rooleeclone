@@ -14,12 +14,14 @@ import GoldenBorder from './GoldenBorder/GoldenBorder'
 import ChatBubble from './ChatBubble/ChatBubble'
 import HandpickedOutfits from './HandpickedOutfits/HandpickedOutfits'
 import SecondaryCategories from './SecondaryCategories/SecondaryCategories'
+import UpArrowButton from './UpArrowButton/UpArrowButton'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <ChatBubble />
+        <UpArrowButton />
         <TopMessage />
         <MainNav />
         <MainCarousel />

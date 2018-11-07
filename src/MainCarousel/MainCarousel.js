@@ -8,7 +8,7 @@ class MainCarousel extends Component {
     render(){
         return(
             <div className="MainCarousel-main">
-
+                <img src={require("../Assets/main-text.jpg")} />
             </div>
         )
     }
