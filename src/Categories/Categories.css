@@ -1,5 +1,4 @@
 .Categories-main {
-    height: 133vh;
     width: 95%;
     margin: 0px auto;
     display: flex;
@@ -9,47 +8,46 @@
     margin-bottom: 60px;
 }
 .Categories-row1 {
-    height: 48.5%;
     width: 100%;
     display: flex;
     justify-content: space-between;
     position: relative;
 }
 .Categories-row1-left{
-    background-image: url('../Assets/new-arrivals.jpg');
     height: 100%;
-    width: 49%;
+    width: 48.75%;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
 }
+.Categories-main img {
+    width: 100%;
+    height: auto;
+}
 .Categories-row1-right{
-    background-image: url('../Assets/dresses.jpg');
     height: 100%;
-    width: 49%;
+    width: 48.75%;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
 }
 .Categories-row2 {
-    height: 48.5%;
     width: 100%;
     display: flex;
     justify-content: space-between;
     position: relative;
+    margin-top: 25px;
 }
 .Categories-row2-left{
-    background-image: url('../Assets/tops.jpg');
     height: 100%;
-    width: 49%;
+    width: 48.75%;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
 }
 .Categories-row2-right{
-    background-image: url('../Assets/shoes.jpg');
     height: 100%;
-    width: 49%;
+    width: 48.75%;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -60,6 +58,8 @@
     background-color: rgba(255, 255, 255, 0.5);
     border: none;
     outline: none;
-    position: relative;
-    top: 68%;
+    z-index: 2;
+    position: absolute;
+    bottom: 23%;
+    left: 50%;
 }

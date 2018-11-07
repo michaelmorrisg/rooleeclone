@@ -6,11 +6,13 @@ import home from '../Assets/home.jpg'
 export default function SecondaryCategories(){
     return (
         <div className="SecondaryCategories-main">
-            <div style={{backgroundImage: `url(${kids})`}}>
-                <button>SHOP KIDS</button>
+            <div>
+            <img src={kids} />
+                <button style={{marginLeft: "-85.5px"}}>SHOP KIDS</button>
             </div>
-            <div style={{backgroundImage: `url(${home})`}}>
-                <button>SHOP HOME DECOR</button>
+            <div>
+            <img src={home}/>
+                <button style={{marginLeft: "-136.5px"}}>SHOP HOME DECOR</button>
             </div>
         </div>
     )

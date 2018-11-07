@@ -1,5 +1,4 @@
 .SecondaryCategories-main {
-    height: 65vh;
     width: 95%;
     display: flex;
     justify-content: space-between;
@@ -7,9 +6,12 @@
     margin-top: 30px;
 }
 .SecondaryCategories-main > div {
-    height: 100%;
     width: 49%;
-    background-size: cover;
+    position: relative;
+}
+.SecondaryCategories-main > div > img {
+    width: 100%;
+    height: auto;
 }
 .SecondaryCategories-main > div > button {
     font-size: 24px;
@@ -17,6 +19,8 @@
     background-color: rgba(255, 255, 255, 0.5);
     border: none;
     outline: none;
-    position: relative;
-    top: 68%;
+    position: absolute;
+    z-index: 2;
+    bottom: 23%;
+    left: 50%;
 }

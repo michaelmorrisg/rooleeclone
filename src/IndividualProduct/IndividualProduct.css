@@ -1,18 +1,17 @@
 .IndividualProduct-main {
-    width: 24%;
-    height: 100%;
+    width: 23.75%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
-.IndividualProduct-image {
-    height: 87%;
+.IndividualProduct-main > img {
     width: 100%;
-    background-size: cover;
+    height: auto;
 }
 .IndividualProduct-title {
     font-size: 20px;
+    padding-top: 20px;
 }
 .IndividualProduct-main a {
     font-family: Times !important;
+    padding-top: 20px;
 }
