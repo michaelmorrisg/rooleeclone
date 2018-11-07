@@ -18,6 +18,7 @@ import UpArrowButton from './UpArrowButton/UpArrowButton'
 import InstagramSection from './InstagramSection/InstagramSection'
 import SignUpNow from './SignUpNow/SignUpNow'
 import TalkToUs from './TalkToUs/TalkToUs'
+import Footer from './Footer/Footer'
 
 class App extends Component {
   render() {
@@ -50,6 +51,7 @@ class App extends Component {
         <GoldenBorder full={true}/>
         <TalkToUs/>
         <GoldenBorder full={true}/>
+        <Footer />
       </div>
     );
   }

@@ -1,0 +1,16 @@
+.Footer-main {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin-left: 5%;
+    line-height: 1.6;
+    font-size: 14px;
+}
+.Footer-main > div {
+    text-align: left;
+}
+.Footer-main h5 {
+    font-weight: 900;
+    font-size: 1.133em;
+    margin-bottom: 15px;
+}
