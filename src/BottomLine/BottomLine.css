@@ -1,0 +1,7 @@
+.BottomLine-main {
+    display: flex;
+    width: 95%;
+    margin: 0px auto;
+    justify-content: space-between;
+    padding-top: 100px;
+}

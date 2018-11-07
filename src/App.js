@@ -19,6 +19,7 @@ import InstagramSection from './InstagramSection/InstagramSection'
 import SignUpNow from './SignUpNow/SignUpNow'
 import TalkToUs from './TalkToUs/TalkToUs'
 import Footer from './Footer/Footer'
+import BottomLine from './BottomLine/BottomLine'
 
 class App extends Component {
   render() {
@@ -52,6 +53,7 @@ class App extends Component {
         <TalkToUs/>
         <GoldenBorder full={true}/>
         <Footer />
+        <BottomLine />
       </div>
     );
   }
