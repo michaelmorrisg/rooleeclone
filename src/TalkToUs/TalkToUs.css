@@ -1,0 +1,10 @@
+.TalkToUs-main {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0px auto;
+}
+.TalkToUs-main > div {
+    display: flex;
+    flex-direction: column;
+}

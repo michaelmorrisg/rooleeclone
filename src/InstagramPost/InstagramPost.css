@@ -1,9 +1,22 @@
 .InstagramPost-main {
     width: 19.8%;
     background-size: cover;
+    position: relative;
 }
 .InstagramPost-main:after {
     content: '';
     display: block;
     padding-bottom: 100%;
+}
+.Instagram-hoverfilter{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+.hidden {
+    display: none;
 }

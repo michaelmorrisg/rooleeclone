@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import './ChatBubble.css'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faComment, faTimes} from '@fortawesome/free-solid-svg-icons'
+import { faComment, faTimes } from '@fortawesome/free-solid-svg-icons'
 
 library.add(faComment, faTimes)
 
