@@ -1,8 +1,12 @@
 .MainImage-main{
-    height: 91vh;
+    /* height: 91vh; */
     width: 95%;
     margin: 0px auto;
     /* background-image: url('../Assets/watches.jpg'); */
     background-size: cover;
     background-repeat: no-repeat;
+}
+.MainImage-main > img {
+    width: 100%;
+    height: auto;
 }
