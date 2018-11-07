@@ -15,6 +15,8 @@ import ChatBubble from './ChatBubble/ChatBubble'
 import HandpickedOutfits from './HandpickedOutfits/HandpickedOutfits'
 import SecondaryCategories from './SecondaryCategories/SecondaryCategories'
 import UpArrowButton from './UpArrowButton/UpArrowButton'
+import InstagramSection from './InstagramSection/InstagramSection'
+import SignUpNow from './SignUpNow/SignUpNow'
 
 class App extends Component {
   render() {
@@ -41,6 +43,10 @@ class App extends Component {
         <MainImage image={familyBusiness}/>
         <GoldenBorder />
         <SectionBreak lineOne="recently on" lineTwo="@ROOLEE"/>
+        <InstagramSection />
+        <GoldenBorder full={true}/>
+        <SignUpNow />
+        <GoldenBorder full={true}/>
       </div>
     );
   }

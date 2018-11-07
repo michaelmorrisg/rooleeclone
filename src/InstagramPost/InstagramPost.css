@@ -1,0 +1,9 @@
+.InstagramPost-main {
+    width: 19.8%;
+    background-size: cover;
+}
+.InstagramPost-main:after {
+    content: '';
+    display: block;
+    padding-bottom: 100%;
+}

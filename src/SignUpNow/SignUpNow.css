@@ -1,0 +1,49 @@
+.SignUpNow-main {
+    display: flex;
+    line-height: 1.6;
+    width: 90%;
+    margin: 0px auto;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.SignUpNow-left {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    position: relative;
+    left: 50px;
+    line-height: 1.1;
+}
+.SignUpNow-middle {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #d69b5c;
+    width: 90%;
+    margin: 0px auto;
+    font-size: 25px;
+    font-style: italic;
+    font-family: Times;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.SignUpNow-right {
+    background-color: white;
+    padding: 20px;
+    position: relative;
+    right: 50px;
+}
+.SignUpNow-main button {
+    background-color: #d89c56;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 10px 30px;
+    font-weight: 100;
+    transition: .3s;
+}
+.SignUpNow-main button:hover {
+    background-color: #fcbf7d;
+    transition: .3s;
+}
