@@ -1,0 +1,48 @@
+.Dropdown-main {
+    width: 95%;
+    position: absolute;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    /* background-color: black; */
+    z-index: 11;
+    display: flex;
+    padding-top: 14px;
+}
+.Dropdown-main ul {
+    line-height: 2;
+    padding-top: 15px;
+}
+.Dropdown-main li:hover {
+    color: #d79c5c;
+}
+.Dropdown-main h2 {
+    color: #d79c5c;
+    border-bottom: 1px solid #d79c5c;
+    padding-bottom: 5px;
+    line-height: 2;
+}
+.Dropdown-category {
+    text-align: left;
+    padding: 10px 20px;
+}
+.Dropdown-main img {
+    width: 300px;
+    height: auto;
+}
+.Dropdown-carousel {
+    width: 80%;
+}
+
+#kids-hidden {
+    display: none;
+}
+#kids-showing {
+    display: block;
+}
+#clothing-hidden {
+    display: none;
+}
+#clothing-showing {
+    display: block;
+}
+

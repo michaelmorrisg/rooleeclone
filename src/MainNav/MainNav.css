@@ -9,7 +9,8 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 10px 0;
+    padding-top: 10px;
+    position: relative;
 }
 .MainNav-row1 {
     display: flex;
@@ -46,6 +47,7 @@ a{
 .MainNav-row3 li {
     font-size: 14px;
     margin-left: 45px;
+    padding-bottom: 10px;
 }
 .MainNav-row3 li:nth-child(1){
     margin-left: 0px

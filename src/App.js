@@ -20,15 +20,50 @@ import SignUpNow from './SignUpNow/SignUpNow'
 import TalkToUs from './TalkToUs/TalkToUs'
 import Footer from './Footer/Footer'
 import BottomLine from './BottomLine/BottomLine'
+import Dropdown from './Dropdown/Dropdown'
 
 class App extends Component {
+  constructor(){
+    super()
+    this.state = {
+      kidsExpanded : false,
+      clothingExpanded : false
+    }
+  }
+  expandKids = ()=>{
+    this.setState({
+      kidsExpanded: true
+    })
+  }
+  shrinkKids = ()=>{
+    this.setState({
+      kidsExpanded: false
+    })
+  }
+  expandClothing = ()=>{
+    this.setState({
+      clothingExpanded: true
+    })
+  }
+  shrinkClothing = ()=>{
+    this.setState({
+      clothingExpanded: false
+    })
+  }
   render() {
     return (
       <div className="App">
         <ChatBubble />
         <UpArrowButton />
         <TopMessage />
-        <MainNav />
+        <MainNav expandKids={this.expandKids} shrinkKids={this.shrinkKids} expandClothing={this.expandClothing}
+        shrinkClothing={this.shrinkClothing}/>
+        <Dropdown expand={this.expandKids} shrink={this.shrinkKids} id={this.state.kidsExpanded ? "kids-showing" : "kids-hidden"} listItems={["NEW KIDS", "BABY 0-24 MONTHS", "GIRLS", "BOYS", "BEDDING", "MOM ACCESSORIES", "PLAY"]} />
+        <Dropdown expand={this.expandClothing} shrink={this.shrinkClothing} id={this.state.clothingExpanded ? "clothing-showing" : "clothing-hidden"}  listItems={["NEW ARRIVALS","TOPS","BOTTOMS","DRESSES","JUMPSUITS + ROMPERS", "OUTERWEAR","PLUS","SWIM","SALE","BACK IN STOCK"]}/>
+        {/* <Dropdown />
+        <Dropdown />
+        <Dropdown />
+        <Dropdown /> */}
         <MainCarousel />
         <SectionBreak lineOne="we believe in" lineTwo="SUNSHINE & JOY IN EVERY DETAIL"/>
         <MainImage image={watches}/>
