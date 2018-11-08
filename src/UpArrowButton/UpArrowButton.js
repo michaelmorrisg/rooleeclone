@@ -32,7 +32,7 @@ class UpArrowButton extends Component {
 
     render(){
         return(
-            <div className={this.state.screenPosition > 150 ?"UpArrowButton-main" : "UpArrowButton-main hidden" } onClick={()=>smoothScroll(0)}>
+            <div className={this.state.screenPosition > 300 ?"UpArrowButton-main" : "UpArrowButton-main hidden" } onClick={()=>smoothScroll(0)}>
                 <FontAwesomeIcon icon="angle-up" color="#d79c5c" size="3x"/>
             </div>
         )
