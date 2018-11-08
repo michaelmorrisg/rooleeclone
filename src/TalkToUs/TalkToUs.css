@@ -1,10 +1,27 @@
 .TalkToUs-main {
     display: flex;
     justify-content: space-between;
-    width: 95%;
+    width: 88%;
     margin: 0px auto;
+    padding-bottom: 20px;
+    line-height: 1.4;
 }
 .TalkToUs-main > div {
     display: flex;
     flex-direction: column;
+    width: 33%;
+}
+.TalkToUs-main > div > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+}
+.TalkToUs-main > div > div > div {
+    display: flex;
+    flex-direction: column;
+}
+.TalkToUs-main img {
+    width: 80px; 
+    height: auto;
 }

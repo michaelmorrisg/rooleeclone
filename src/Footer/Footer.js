@@ -32,8 +32,14 @@ export default function Footer(){
                     <li>SAT 10-7</li>
                 </ul>
             </div>
-            <div>
-                <h6>LET'S BE FRIENDS</h6>
+            <div className="Footer-social-main">
+                <h6 style={{fontFamily: "Times", letterSpacing: "2px", fontSize: "1.133em", fontWeight: "900", marginBottom: "15px"}}>LET'S BE FRIENDS</h6>
+                <div className="Footer-social-div">
+                    <img src={require("../Assets/instabubble.png")}/>
+                    <img src={require("../Assets/facebubble.png")}/>
+                    <img src={require("../Assets/pinbubble.png")}/>
+                    <img src={require("../Assets/mailbubble.png")}/>
+                </div>
             </div>
             <div>
                 <h5>CUSTOMER CARE</h5>
