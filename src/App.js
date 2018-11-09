@@ -37,6 +37,16 @@ import purses from './Assets/carousel-purses.jpg'
 import momImage from './Assets/carousel-mom.jpg'
 import nursing from './Assets/carousel-nursing.jpg'
 import momAccessories from './Assets/carousel-momAccessories.jpg'
+import baby from './Assets/carousel-baby.jpg'
+import bedding from './Assets/carousel-bedding.jpg'
+import boys from './Assets/carousel-boys.jpg'
+import girls from './Assets/carousel-girls.jpg'
+import homeNewArrivals from "./Assets/carousel-homeNewArrivals.jpg"
+import homeDecor from './Assets/carousel-homeDecor.jpg'
+import paper from './Assets/carousel-paper.jpg'
+import womensGifts from './Assets/carousel-womensGifts.jpg'
+import mensGifts from './Assets/carousel-mensGifts.jpg'
+import kidsGifts from './Assets/carousel-kidsGifts.jpg'
 
 class App extends Component {
   constructor(){
@@ -135,7 +145,7 @@ class App extends Component {
         shrink={this.shrinkKids} 
         id={this.state.kidsExpanded ? "kids-showing" : "kids-hidden"} 
         listItems={["NEW KIDS", "BABY 0-24 MONTHS", "GIRLS", "BOYS", "BEDDING", "MOM ACCESSORIES", "PLAY"]} 
-        images={[{image:bottoms,text: "BOTTOMS"},{image:tops,text:"TOPS"},{image:dresses,text:"DRESSES"},{image:jumpsuits,text:"JUMPSUITS + ROMPERS"},{image:outerwear,text:"OUTERWEAR"}]}/> 
+        images={[{image:baby,text: "BABY 0-24 MONTHS"},{image:girls,text:"GIRLS"},{image:boys,text:"BOYS"},{image:bedding,text:"BEDDING"},{image:momAccessories,text:"DIAPER BAGS"}]}/> 
         <Dropdown 
         expand={this.expandClothing} 
         shrink={this.shrinkClothing} 
@@ -159,13 +169,13 @@ class App extends Component {
         shrink={this.shrinkHome}
         id={this.state.homeExpanded ? "home-showing" : "home-hidden"}
         listItems={["NEW ARRIVALS","HOME DECOR", "PAPER + PARTY"]}
-        images={[{image:bottoms,text: "BOTTOMS"},{image:tops,text:"TOPS"},{image:dresses,text:"DRESSES"},{image:jumpsuits,text:"JUMPSUITS + ROMPERS"},{image:outerwear,text:"OUTERWEAR"}]}/>        
+        images={[{image:homeNewArrivals,text: "NEW ARRIVALS"},{image:homeDecor,text:"HOME DECOR"},{image:paper,text:"PAPER + PARTY"}]}/>        
         <Dropdown 
         expand={this.expandGifts}
         shrink={this.shrinkGifts}
         id={this.state.giftsExpanded ? "gifts-showing" : "gifts-hidden"}
         listItems={["GIFT CARDS", "WOMENS GIFTS", "MENS GIFTS", "KIDS GIFTS"]}
-        images={[{image:bottoms,text: "BOTTOMS"},{image:tops,text:"TOPS"},{image:dresses,text:"DRESSES"},{image:jumpsuits,text:"JUMPSUITS + ROMPERS"},{image:outerwear,text:"OUTERWEAR"}]}/>
+        images={[{image:womensGifts,text: "WOMENS GIFTS"},{image:mensGifts,text:"MENS GIFTS"},{image:kidsGifts, text:"KIDS GIFTS"}]}/>
         <MainCarousel />
         <SectionBreak lineOne="we believe in" lineTwo="SUNSHINE & JOY IN EVERY DETAIL"/>
         <MainImage image={watches}/>
