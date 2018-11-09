@@ -67,7 +67,8 @@ class Dropdown extends Component {
                             return (
                                 <div className="slide-container">
                                     <div>
-                                        <img src={image} />
+                                        <img src={image.image} />
+                                        <button>{image.text}</button>
                                     </div>
                                 </div>
                             )

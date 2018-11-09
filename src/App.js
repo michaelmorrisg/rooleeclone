@@ -25,7 +25,9 @@ import Dropdown from './Dropdown/Dropdown'
 import bottoms from './Assets/carousel-bottoms.jpg'
 import dresses from './Assets/carousel-dresses.jpg'
 import jumpsuits from './Assets/carousel-jumpsuits.jpg'
-import outerwear from './Assets/carousel-newArrivals.jpg'
+import outerwear from './Assets/carousel-outerwear.jpg'
+import newArrivals from './Assets/carousel-newArrivals.jpg'
+import swim from './Assets/carousel-swim.jpg'
 import tops from './Assets/carousel-tops.jpg'
 
 class App extends Component {
@@ -125,40 +127,37 @@ class App extends Component {
         shrink={this.shrinkKids} 
         id={this.state.kidsExpanded ? "kids-showing" : "kids-hidden"} 
         listItems={["NEW KIDS", "BABY 0-24 MONTHS", "GIRLS", "BOYS", "BEDDING", "MOM ACCESSORIES", "PLAY"]} 
-        images={[bottoms,tops,dresses,jumpsuits,outerwear]}
-        />
+        images={[{image:bottoms,text: "BOTTOMS"},{image:tops,text:"TOPS"},{image:dresses,text:"DRESSES"},{image:jumpsuits,text:"JUMPSUITS + ROMPERS"},{image:outerwear,text:"OUTERWEAR"}]}/> 
         <Dropdown 
         expand={this.expandClothing} 
         shrink={this.shrinkClothing} 
         id={this.state.clothingExpanded ? "clothing-showing" : "clothing-hidden"}  
         listItems={["NEW ARRIVALS","TOPS","BOTTOMS","DRESSES","JUMPSUITS + ROMPERS", "OUTERWEAR","PLUS","SWIM","SALE","BACK IN STOCK"]}
-        images={[bottoms,tops,dresses,jumpsuits,outerwear]}/>
+        images={[{image:newArrivals, text:"NEW ARRIVALS"},{image:tops,text:"TOPS"}, {image:bottoms,text: "BOTTOMS"},{image:dresses,text:"DRESSES"},{image:jumpsuits,text:"JUMPSUITS + ROMPERS"},{image:outerwear,text:"OUTERWEAR"},{image:swim, text:"SWIM"}]}/>        
         <Dropdown 
         expand={this.expandShoes}
         shrink={this.shrinkShoes}
         id={this.state.shoesExpanded ? "shoes-showing" : "shoes-hidden"}
         listItems={["NEW ARRIVALS", "BANDANAS + HAIR", "SHOES","HATS","JEWELRY","PURSES + BAGS","WATCHES","OTHER"]}
-        images={[bottoms,tops,dresses,jumpsuits,outerwear]}
-        />
+        images={[{image:bottoms,text: "BOTTOMS"},{image:tops,text:"TOPS"},{image:dresses,text:"DRESSES"},{image:jumpsuits,text:"JUMPSUITS + ROMPERS"},{image:outerwear,text:"OUTERWEAR"}]}/> 
         <Dropdown 
         expand={this.expandMom}
         shrink={this.shrinkMom}
         id={this.state.momExpanded ? "mom-showing" : "mom-hidden"}
         listItems={["ROOLEE MOM", "NURSING FRIENDLY", "ACCESSORIES"]}
-        images={[bottoms,tops,dresses,jumpsuits,outerwear]}
-        />
+        images={[{image:bottoms,text: "BOTTOMS"},{image:tops,text:"TOPS"},{image:dresses,text:"DRESSES"},{image:jumpsuits,text:"JUMPSUITS + ROMPERS"},{image:outerwear,text:"OUTERWEAR"}]}/>
         <Dropdown 
         expand={this.expandHome}
         shrink={this.shrinkHome}
         id={this.state.homeExpanded ? "home-showing" : "home-hidden"}
         listItems={["NEW ARRIVALS","HOME DECOR", "PAPER + PARTY"]}
-        images={[bottoms,tops,dresses,jumpsuits,outerwear]}/>
+        images={[{image:bottoms,text: "BOTTOMS"},{image:tops,text:"TOPS"},{image:dresses,text:"DRESSES"},{image:jumpsuits,text:"JUMPSUITS + ROMPERS"},{image:outerwear,text:"OUTERWEAR"}]}/>        
         <Dropdown 
         expand={this.expandGifts}
         shrink={this.shrinkGifts}
         id={this.state.giftsExpanded ? "gifts-showing" : "gifts-hidden"}
         listItems={["GIFT CARDS", "WOMENS GIFTS", "MENS GIFTS", "KIDS GIFTS"]}
-        images={[bottoms,tops,dresses,jumpsuits,outerwear]}/>
+        images={[{image:bottoms,text: "BOTTOMS"},{image:tops,text:"TOPS"},{image:dresses,text:"DRESSES"},{image:jumpsuits,text:"JUMPSUITS + ROMPERS"},{image:outerwear,text:"OUTERWEAR"}]}/>
         <MainCarousel />
         <SectionBreak lineOne="we believe in" lineTwo="SUNSHINE & JOY IN EVERY DETAIL"/>
         <MainImage image={watches}/>

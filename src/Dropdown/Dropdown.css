@@ -1,5 +1,5 @@
 .Dropdown-main {
-    width: 95%;
+    width: 98%;
     position: absolute;
     left: 0;
     background-color: rgba(255, 255, 255, 0.9);
@@ -7,6 +7,7 @@
     z-index: 11;
     display: flex;
     padding-top: 14px;
+    min-height: 330px;
 }
 .Dropdown-main ul {
     line-height: 2;
@@ -38,10 +39,27 @@
 }
 .slide-container > div {
     width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
 .slide-container > div > img {
     width: 95%;
     height: auto;
+}
+.slide-container button {
+    position: absolute;
+    z-index: 12;
+    bottom: 10%;
+    left: 9%;
+    background-color:rgba(255, 255, 255, 0.9);
+    border: none;
+    outline: none;
+    width: 82%;
+    padding: 5px 0px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
 }
 
 #kids-hidden {
