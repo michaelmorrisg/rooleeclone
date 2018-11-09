@@ -29,6 +29,14 @@ import outerwear from './Assets/carousel-outerwear.jpg'
 import newArrivals from './Assets/carousel-newArrivals.jpg'
 import swim from './Assets/carousel-swim.jpg'
 import tops from './Assets/carousel-tops.jpg'
+import hats from './Assets/carousel-hats.jpg'
+import bandanas from './Assets/carousel-bandanas.jpg'
+import footwear from './Assets/carousel-footwear.jpg'
+import jewelry from './Assets/carousel-jewelry.jpg'
+import purses from './Assets/carousel-purses.jpg'
+import momImage from './Assets/carousel-mom.jpg'
+import nursing from './Assets/carousel-nursing.jpg'
+import momAccessories from './Assets/carousel-momAccessories.jpg'
 
 class App extends Component {
   constructor(){
@@ -139,13 +147,13 @@ class App extends Component {
         shrink={this.shrinkShoes}
         id={this.state.shoesExpanded ? "shoes-showing" : "shoes-hidden"}
         listItems={["NEW ARRIVALS", "BANDANAS + HAIR", "SHOES","HATS","JEWELRY","PURSES + BAGS","WATCHES","OTHER"]}
-        images={[{image:bottoms,text: "BOTTOMS"},{image:tops,text:"TOPS"},{image:dresses,text:"DRESSES"},{image:jumpsuits,text:"JUMPSUITS + ROMPERS"},{image:outerwear,text:"OUTERWEAR"}]}/> 
+        images={[{image:footwear,text: "FOOTWEAR"},{image:hats,text:"HATS"},{image:jewelry,text:"JEWELRY"},{image:bandanas,text:"BANDANAS"},{image:purses,text:"PURSES + BAGS"}]}/> 
         <Dropdown 
         expand={this.expandMom}
         shrink={this.shrinkMom}
         id={this.state.momExpanded ? "mom-showing" : "mom-hidden"}
         listItems={["ROOLEE MOM", "NURSING FRIENDLY", "ACCESSORIES"]}
-        images={[{image:bottoms,text: "BOTTOMS"},{image:tops,text:"TOPS"},{image:dresses,text:"DRESSES"},{image:jumpsuits,text:"JUMPSUITS + ROMPERS"},{image:outerwear,text:"OUTERWEAR"}]}/>
+        images={[{image:nursing,text: "ROOLEE MOM"},{image:momImage,text:"NURSING FRIENDLY"},{image:momAccessories,text:"ACCESSORIES"}]}/>
         <Dropdown 
         expand={this.expandHome}
         shrink={this.shrinkHome}

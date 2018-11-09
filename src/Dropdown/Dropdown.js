@@ -9,7 +9,7 @@ function SampleNextArrow(props) {
     return (
       <div
         className="MainCarousel-carousel-arrow right"
-        style={{position:"absolute", right: "-65px"}}
+        style={{position:"absolute", right: "-65px", top: "40%"}}
         onClick={onClick}
       >
       <img style={{width: "50%", height: "auto"}} src={require('../Assets/right.png')}/>
@@ -21,7 +21,7 @@ function SamplePrevArrow(props) {
     return (
       <div
         className="MainCarousel-carousel-arrow left"
-        style={{position:"absolute", left: "-65px"}}
+        style={{position:"absolute", left: "-65px", top:"40%"}}
         onClick={onClick}
       >
       <img style={{width: "50%", height: "auto"}} src={require('../Assets/left.png')}/>
@@ -32,6 +32,16 @@ function SamplePrevArrow(props) {
 class Dropdown extends Component {
     constructor(){
         super()
+        this.state = {
+            slidesShow: 4
+        }
+    }
+    componentDidMount(){
+        if(this.props.images.length < 4){
+            this.setState({
+                slidesShow: this.props.images.length
+            })
+        }
     }
 
 
@@ -39,7 +49,7 @@ class Dropdown extends Component {
         const settings = {
             dots: false,
             infinite: true,
-            slidesToShow: 4,
+            slidesToShow: this.state.slidesShow,
             slidesToScroll: 1,
             nextArrow: <SampleNextArrow />,
             prevArrow: <SamplePrevArrow />
@@ -56,7 +66,7 @@ class Dropdown extends Component {
                         })}
                     </ul>
                 </div>
-                <div className="Dropdown-carousel">
+                <div className="Dropdown-carousel" style={{width: `${this.props.images.length < 4 ? "50%" : "65%"}`}}>
                     <Slider {...settings} style={{backgroundColor:"pink"}}>
                         {/* <div className="slide-container"><div><img src={require('../Assets/carousel-newArrivals.jpg')}/></div></div>
                         <div className="slide-container"><div><img src={require('../Assets/carousel-newArrivals.jpg')}/></div></div>
