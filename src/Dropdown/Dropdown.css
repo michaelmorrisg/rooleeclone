@@ -24,13 +24,24 @@
 .Dropdown-category {
     text-align: left;
     padding: 10px 20px;
+    width: 20%;
 }
 .Dropdown-main img {
     width: 300px;
     height: auto;
 }
 .Dropdown-carousel {
-    width: 80%;
+    width: 65%;
+    position: absolute;
+    top: 25px;
+    right: 100px;
+}
+.slide-container > div {
+    width: 100%;
+}
+.slide-container > div > img {
+    width: 95%;
+    height: auto;
 }
 
 #kids-hidden {
