@@ -25,13 +25,13 @@ class MainNav extends Component {
                         <ul>
                             <li>NEW</li>
                             <li onMouseEnter={()=>this.props.expandClothing()} onMouseLeave={()=>this.props.shrinkClothing()}>CLOTHING</li>
-                            <li>SHOES + ACCESSORIES</li>
+                            <li onMouseEnter={()=>this.props.expandShoes()} onMouseLeave={()=>this.props.shrinkShoes()}>SHOES + ACCESSORIES</li>
                             <li>OUTFITS</li>
-                            <li>MOM</li>
+                            <li onMouseEnter={()=>this.props.expandMom()} onMouseLeave={()=>this.props.shrinkMom()}>MOM</li>
                             <li onMouseEnter={()=>this.props.expandKids()} onMouseLeave={()=>this.props.shrinkKids()}>KIDS</li>
-                            <li>HOUSE + HOME</li>
+                            <li onMouseEnter={()=>this.props.expandHome()} onMouseLeave={()=>this.props.shrinkHome()}>HOUSE + HOME</li>
                             <li>SALE</li>
-                            <li>GIFTS</li>
+                            <li onMouseEnter={()=>this.props.expandGifts()} onMouseLeave={()=>this.props.shrinkGifts()}>GIFTS</li>
                             <li>FAQS</li>
                             <li>MORE</li>
                         </ul>

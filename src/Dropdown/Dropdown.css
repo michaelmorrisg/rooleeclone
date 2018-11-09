@@ -45,4 +45,28 @@
 #clothing-showing {
     display: block;
 }
+#shoes-hidden {
+    display: none;
+}
+#shoes-showing {
+    display: block;
+}
+#mom-hidden {
+    display: none;
+}
+#mom-showing {
+    display: block;
+}
+#home-hidden {
+    display: none;
+}
+#home-showing {
+    display: block;
+}
+#gifts-hidden {
+    display: none;
+}
+#gifts-showing {
+    display: block;
+}
 

@@ -27,7 +27,11 @@ class App extends Component {
     super()
     this.state = {
       kidsExpanded : false,
-      clothingExpanded : false
+      clothingExpanded : false,
+      shoesExpanded : false,
+      momExpanded: false,
+      homeExpanded: false,
+      giftsExpanded: false
     }
   }
   expandKids = ()=>{
@@ -50,20 +54,98 @@ class App extends Component {
       clothingExpanded: false
     })
   }
+  expandShoes = ()=>{
+    this.setState({
+      shoesExpanded: true
+    })
+  }
+  shrinkShoes = ()=>{
+    this.setState({
+      shoesExpanded: false
+    })
+  }
+  expandMom = ()=>{
+    this.setState({
+      momExpanded: true
+    })
+  }
+  shrinkMom = ()=>{
+    this.setState({
+      momExpanded: false
+    })
+  }
+  expandHome = ()=>{
+    this.setState({
+      homeExpanded: true
+    })
+  }
+  shrinkHome = ()=>{
+    this.setState({
+      homeExpanded: false
+    })
+  }
+  expandGifts = ()=>{
+    this.setState({
+      giftsExpanded: true
+    })
+  }
+  shrinkGifts = ()=>{
+    this.setState({
+      giftsExpanded: false
+    })
+  }
   render() {
     return (
       <div className="App">
         <ChatBubble />
         <UpArrowButton />
         <TopMessage />
-        <MainNav expandKids={this.expandKids} shrinkKids={this.shrinkKids} expandClothing={this.expandClothing}
-        shrinkClothing={this.shrinkClothing}/>
-        <Dropdown expand={this.expandKids} shrink={this.shrinkKids} id={this.state.kidsExpanded ? "kids-showing" : "kids-hidden"} listItems={["NEW KIDS", "BABY 0-24 MONTHS", "GIRLS", "BOYS", "BEDDING", "MOM ACCESSORIES", "PLAY"]} />
-        <Dropdown expand={this.expandClothing} shrink={this.shrinkClothing} id={this.state.clothingExpanded ? "clothing-showing" : "clothing-hidden"}  listItems={["NEW ARRIVALS","TOPS","BOTTOMS","DRESSES","JUMPSUITS + ROMPERS", "OUTERWEAR","PLUS","SWIM","SALE","BACK IN STOCK"]}/>
-        {/* <Dropdown />
-        <Dropdown />
-        <Dropdown />
-        <Dropdown /> */}
+        <MainNav 
+        expandKids={this.expandKids} 
+        shrinkKids={this.shrinkKids} 
+        expandClothing={this.expandClothing}
+        shrinkClothing={this.shrinkClothing}
+        expandShoes={this.expandShoes}
+        shrinkShoes={this.shrinkShoes}
+        expandMom={this.expandMom}
+        shrinkMom={this.shrinkMom}
+        expandHome={this.expandHome}
+        shrinkHome={this.shrinkHome}
+        expandGifts={this.expandGifts}
+        shrinkGifts={this.shrinkGifts}
+        />
+        <Dropdown 
+        expand={this.expandKids} 
+        shrink={this.shrinkKids} 
+        id={this.state.kidsExpanded ? "kids-showing" : "kids-hidden"} 
+        listItems={["NEW KIDS", "BABY 0-24 MONTHS", "GIRLS", "BOYS", "BEDDING", "MOM ACCESSORIES", "PLAY"]} />
+        <Dropdown 
+        expand={this.expandClothing} 
+        shrink={this.shrinkClothing} 
+        id={this.state.clothingExpanded ? "clothing-showing" : "clothing-hidden"}  
+        listItems={["NEW ARRIVALS","TOPS","BOTTOMS","DRESSES","JUMPSUITS + ROMPERS", "OUTERWEAR","PLUS","SWIM","SALE","BACK IN STOCK"]}/>
+        <Dropdown 
+        expand={this.expandShoes}
+        shrink={this.shrinkClothing}
+        id={this.state.shoesExpanded ? "shoes-showing" : "shoes-hidden"}
+        listItems={["NEW ARRIVALS", "BANDANAS + HAIR", "SHOES","HATS","JEWELRY","PURSES + BAGS","WATCHES","OTHER"]}
+        />
+        <Dropdown 
+        expand={this.expandMom}
+        shrink={this.shrinkMom}
+        id={this.state.momExpanded ? "mom-showing" : "mom-hidden"}
+        listItems={["ROOLEE MOM", "NURSING FRIENDLY", "ACCESSORIES"]}
+        />
+        <Dropdown 
+        expand={this.expandHome}
+        shrink={this.shrinkHome}
+        id={this.state.homeExpanded ? "home-showing" : "home-hidden"}
+        listItems={["NEW ARRIVALS","HOME DECOR", "PAPER + PARTY"]}/>
+        <Dropdown 
+        expand={this.expandGifts}
+        shrink={this.shrinkGifts}
+        id={this.state.giftsExpanded ? "gifts-showing" : "gifts-hidden"}
+        listItems={["GIFT CARDS", "WOMENS GIFTS", "MENS GIFTS", "KIDS GIFTS"]}/>
         <MainCarousel />
         <SectionBreak lineOne="we believe in" lineTwo="SUNSHINE & JOY IN EVERY DETAIL"/>
         <MainImage image={watches}/>
