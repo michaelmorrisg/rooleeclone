@@ -23,7 +23,7 @@ class MainNav extends Component {
                 <div className="MainNav-row3">
                     <nav>
                         <ul>
-                            <li>NEW</li>
+                            <li style={{paddingLeft: "0px"}}>NEW</li>
                             <li onMouseEnter={()=>this.props.expandClothing()} onMouseLeave={()=>this.props.shrinkClothing()}>CLOTHING</li>
                             <li onMouseEnter={()=>this.props.expandShoes()} onMouseLeave={()=>this.props.shrinkShoes()}>SHOES + ACCESSORIES</li>
                             <li>OUTFITS</li>

@@ -140,36 +140,42 @@ class App extends Component {
         expandGifts={this.expandGifts}
         shrinkGifts={this.shrinkGifts}
         />
+        {/* KIDS DROPDOWN */}
         <Dropdown 
         expand={this.expandKids} 
         shrink={this.shrinkKids} 
         id={this.state.kidsExpanded ? "kids-showing" : "kids-hidden"} 
         listItems={["NEW KIDS", "BABY 0-24 MONTHS", "GIRLS", "BOYS", "BEDDING", "MOM ACCESSORIES", "PLAY"]} 
         images={[{image:baby,text: "BABY 0-24 MONTHS"},{image:girls,text:"GIRLS"},{image:boys,text:"BOYS"},{image:bedding,text:"BEDDING"},{image:momAccessories,text:"DIAPER BAGS"}]}/> 
+        {/* CLOTHING DROPDOWN */}
         <Dropdown 
         expand={this.expandClothing} 
         shrink={this.shrinkClothing} 
         id={this.state.clothingExpanded ? "clothing-showing" : "clothing-hidden"}  
         listItems={["NEW ARRIVALS","TOPS","BOTTOMS","DRESSES","JUMPSUITS + ROMPERS", "OUTERWEAR","PLUS","SWIM","SALE","BACK IN STOCK"]}
         images={[{image:newArrivals, text:"NEW ARRIVALS"},{image:tops,text:"TOPS"}, {image:bottoms,text: "BOTTOMS"},{image:dresses,text:"DRESSES"},{image:jumpsuits,text:"JUMPSUITS + ROMPERS"},{image:outerwear,text:"OUTERWEAR"},{image:swim, text:"SWIM"}]}/>        
+        {/* SHOES DROPDOWN */}
         <Dropdown 
         expand={this.expandShoes}
         shrink={this.shrinkShoes}
         id={this.state.shoesExpanded ? "shoes-showing" : "shoes-hidden"}
         listItems={["NEW ARRIVALS", "BANDANAS + HAIR", "SHOES","HATS","JEWELRY","PURSES + BAGS","WATCHES","OTHER"]}
         images={[{image:footwear,text: "FOOTWEAR"},{image:hats,text:"HATS"},{image:jewelry,text:"JEWELRY"},{image:bandanas,text:"BANDANAS"},{image:purses,text:"PURSES + BAGS"}]}/> 
+        {/* MOM DROPDOWN */}
         <Dropdown 
         expand={this.expandMom}
         shrink={this.shrinkMom}
         id={this.state.momExpanded ? "mom-showing" : "mom-hidden"}
         listItems={["ROOLEE MOM", "NURSING FRIENDLY", "ACCESSORIES"]}
         images={[{image:nursing,text: "ROOLEE MOM"},{image:momImage,text:"NURSING FRIENDLY"},{image:momAccessories,text:"ACCESSORIES"}]}/>
+        {/* HOME DROPDOWN */}
         <Dropdown 
         expand={this.expandHome}
         shrink={this.shrinkHome}
         id={this.state.homeExpanded ? "home-showing" : "home-hidden"}
         listItems={["NEW ARRIVALS","HOME DECOR", "PAPER + PARTY"]}
         images={[{image:homeNewArrivals,text: "NEW ARRIVALS"},{image:homeDecor,text:"HOME DECOR"},{image:paper,text:"PAPER + PARTY"}]}/>        
+        {/* GIFTS DROPDOWN */}
         <Dropdown 
         expand={this.expandGifts}
         shrink={this.shrinkGifts}

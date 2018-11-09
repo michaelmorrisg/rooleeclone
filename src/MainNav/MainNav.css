@@ -4,7 +4,6 @@ a{
     font-style: italic;
 }
 .MainNav-main {
-    height: 20vh;
     border-bottom: 1px solid #d69b5c;
     display: flex;
     flex-direction: column;
@@ -29,12 +28,13 @@ a{
 .MainNav-row2 {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     font-size: 60px;
     font-weight: 300;
     position: relative;
     top: -15px;
-    padding-top: 15px;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 #shopping-cart-icon {
     margin-left: 5px;
@@ -47,8 +47,10 @@ a{
 }
 .MainNav-row3 li {
     font-size: 14px;
-    margin-left: 45px;
     padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
 }
 .MainNav-row3 li:nth-child(1){
     margin-left: 0px
