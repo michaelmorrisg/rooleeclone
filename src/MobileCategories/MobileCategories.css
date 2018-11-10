@@ -1,0 +1,24 @@
+.MobileCategories-main {
+    width: 95%;
+    margin: 0px auto;
+}
+.MobileCategories-main div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.MobileCategories-main button {
+    background-color: white;
+    border: 1px solid #d69b5c;
+    padding: 13px 10px;
+    width: 48.5%;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+@media(min-width: 769px){
+
+    .MobileCategories-main {
+        display: none;
+    }
+}

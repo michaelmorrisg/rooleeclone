@@ -7,3 +7,10 @@
     border-top: 1px solid #d69b5c
 
 }
+
+@media(max-width:768px){
+
+    .GoldenBorder-main{
+        width: 100%;
+    }
+}

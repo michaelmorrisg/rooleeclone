@@ -17,3 +17,11 @@
 .SectionBreak-lineTwo {
     font-size: 22pt;
 }
+@media(max-width:768px){
+    .SectionBreak-lineOne {
+        font-size: 14pt;
+    }
+    .SectionBreak-lineTwo {
+        font-size: 18pt;
+    }
+}

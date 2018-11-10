@@ -23,6 +23,8 @@ import BottomLine from './BottomLine/BottomLine'
 import Dropdown from './Dropdown/Dropdown'
 import MobileNav from './MobileNav/MobileNav'
 import MobileTitle from './MobileTitle/MobileTitle'
+import MobileCategories from './MobileCategories/MobileCategories'
+import MobileSignUpNow from './MobileSignUpNow/MobileSignUpNow'
 //Images//
 import bottoms from './Assets/carousel-bottoms.jpg'
 import dresses from './Assets/carousel-dresses.jpg'
@@ -192,6 +194,7 @@ class App extends Component {
         <GoldenBorder />
         <SectionBreak lineOne="browse through" lineTwo="OUR FAVORITE CATEGORIES"/>
         <Categories />
+        <MobileCategories />
         <GoldenBorder />
         <SectionBreak lineOne="just for you:" lineTwo="HANDPICKED OUTFITS"/>
         <HandpickedOutfits />
@@ -206,6 +209,7 @@ class App extends Component {
         <InstagramSection />
         <GoldenBorder full={true}/>
         <SignUpNow />
+        <MobileSignUpNow />
         <GoldenBorder full={true}/>
         <TalkToUs/>
         <GoldenBorder full={true}/>

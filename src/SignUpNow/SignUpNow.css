@@ -47,3 +47,9 @@
     background-color: #fcbf7d;
     transition: .3s;
 }
+@media(max-width: 768px){
+
+    .SignUpNow-main {
+        display: none;
+    }
+}

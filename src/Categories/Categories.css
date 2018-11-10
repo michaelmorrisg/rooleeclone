@@ -63,3 +63,10 @@
     bottom: 23%;
     left: 50%;
 }
+
+@media(max-width:768px){
+
+    .Categories-main{
+        display: none;
+    }
+}
