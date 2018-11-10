@@ -3,6 +3,9 @@ a{
     text-decoration: none;
     font-style: italic;
 }
+a:hover{
+    color: #e4be97;
+}
 .MainNav-main {
     border-bottom: 1px solid #d69b5c;
     display: flex;
@@ -14,10 +17,11 @@ a{
 .MainNav-row1 {
     display: flex;
     justify-content: flex-end;
-    width: 95%;
+    width: 92%;
     margin: 0px auto;
-    font-size: 13px;
+    font-size: 14px;
     font-style: italic;
+    font-family: 'Times' !important;
 }
 .MainNav-row1 > p {
     padding-left: 20px;
@@ -34,7 +38,7 @@ a{
     position: relative;
     top: -15px;
     margin-top: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 #shopping-cart-icon {
     margin-left: 5px;
@@ -51,6 +55,7 @@ a{
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 5px;
+    cursor: pointer;
 }
 .MainNav-row3 li:nth-child(1){
     margin-left: 0px

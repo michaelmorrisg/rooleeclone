@@ -66,7 +66,7 @@ class Dropdown extends Component {
                         })}
                     </ul>
                 </div>
-                <div className="Dropdown-carousel" style={{width: `${this.props.images.length < 4 ? "50%" : "65%"}`,right: `${this.props.images.length < 4 ? "25%": "100px"}`}}>
+                <div className="Dropdown-carousel" style={{width: `${this.props.images.length < 4 ? "50%" : "70%"}`,right: `${this.props.images.length < 4 ? "25%": "100px"}`}}>
                     <Slider {...settings} style={{backgroundColor:"pink"}}>
                         {/* <div className="slide-container"><div><img src={require('../Assets/carousel-newArrivals.jpg')}/></div></div>
                         <div className="slide-container"><div><img src={require('../Assets/carousel-newArrivals.jpg')}/></div></div>
