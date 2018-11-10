@@ -1,0 +1,23 @@
+.MobileNav-main {
+    display: flex;
+    margin: 0px auto;
+    width: 85%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    font-style: italic;
+    font-family: 'Times';
+    font-size: 14px;
+    height: 22px;
+}
+.MobileNav-item {
+    display: flex;
+    width: 10%;
+    justify-content: space-between;
+}
+
+@media(min-width:769px){
+    .MobileNav-main{
+        display: none;
+    }
+}

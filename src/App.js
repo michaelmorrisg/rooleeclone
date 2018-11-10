@@ -21,6 +21,8 @@ import TalkToUs from './TalkToUs/TalkToUs'
 import Footer from './Footer/Footer'
 import BottomLine from './BottomLine/BottomLine'
 import Dropdown from './Dropdown/Dropdown'
+import MobileNav from './MobileNav/MobileNav'
+import MobileTitle from './MobileTitle/MobileTitle'
 //Images//
 import bottoms from './Assets/carousel-bottoms.jpg'
 import dresses from './Assets/carousel-dresses.jpg'
@@ -126,6 +128,8 @@ class App extends Component {
         <ChatBubble />
         <UpArrowButton />
         <TopMessage />
+        <MobileNav/>
+        <MobileTitle/>
         <MainNav 
         expandKids={this.expandKids} 
         shrinkKids={this.shrinkKids} 

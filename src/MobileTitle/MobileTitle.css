@@ -1,0 +1,16 @@
+.Mobiletitle-main {
+    border-top: 1px solid #d69b5c;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    font-weight: 300;
+    position: relative;
+    height: 86px;
+}
+@media(min-width:769px){
+    .Mobiletitle-main{
+        display: none;
+    }
+}

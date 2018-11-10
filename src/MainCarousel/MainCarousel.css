@@ -41,3 +41,9 @@
     background-color: white;
     z-index: 2;
 }
+@media(max-width:768px){
+
+    .MainCarousel-main{
+        margin-top: 0px;
+    }
+}

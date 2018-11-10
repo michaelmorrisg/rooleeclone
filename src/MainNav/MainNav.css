@@ -60,3 +60,10 @@ a:hover{
 .MainNav-row3 li:nth-child(1){
     margin-left: 0px
 }
+
+@media(max-width:768px){
+
+    .MainNav-main{
+        display: none;
+    }
+}
