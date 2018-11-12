@@ -1,20 +1,40 @@
-import React from 'react'
+import React, {Component} from 'react'
 import InstagramPost from '../InstagramPost/InstagramPost'
+import axios from 'axios'
 import './InstagramSection.css'
 import insta1 from '../Assets/Insta1.jpg'
 import insta2 from '../Assets/Insta2.jpg'
 import insta3 from '../Assets/Insta3.jpg'
 import insta4 from '../Assets/Insta4.jpg'
 import insta5 from '../Assets/Insta5.jpg'
+import { ENGINE_METHOD_DIGESTS } from 'constants';
 
-export default function InstagramSection(){
-    return (
-        <div className="InstagramSection-main">
-            <InstagramPost image={insta1}/>
-            <InstagramPost image={insta2}/>
-            <InstagramPost image={insta3}/>
-            <InstagramPost image={insta4}/>
-            <InstagramPost image={insta5}/>
-        </div>
-    )
-}
+class InstagramSection extends Component{
+    constructor(){
+        super()
+        this.state = {
+            instagramPhotos : [insta1,insta2,insta3,insta4,insta5]
+        }
+    }
+
+    componentDidMount(){
+        axios.get('/api/insta').then(res => {
+            console.log(res.data, 'me')
+            this.setState({
+                instagramPhotos : res.data
+            })
+        })
+    }
+
+    render(){ 
+        return (
+            <div className="InstagramSection-main">
+                <InstagramPost image={this.state.instagramPhotos[0]} />
+                <InstagramPost image={this.state.instagramPhotos[1]} />
+                <InstagramPost image={this.state.instagramPhotos[2]} />
+                <InstagramPost image={this.state.instagramPhotos[3]} />
+                <InstagramPost image={this.state.instagramPhotos[4]} />
+            </div>
+        )
+    }
+} export default InstagramSection

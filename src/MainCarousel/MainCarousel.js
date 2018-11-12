@@ -6,6 +6,7 @@ import bells from '../Assets/bells.jpg'
 import main from '../Assets/main-text.jpg'
 import buffalo from '../Assets/buffalo.jpg'
 
+
 class MainCarousel extends Component {
     constructor(){
         super()
@@ -14,6 +15,7 @@ class MainCarousel extends Component {
             currentSlide : 0
         }
     }
+
     advanceSlide(){
         if(this.state.currentSlide < this.state.images.length -1){
             this.setState({

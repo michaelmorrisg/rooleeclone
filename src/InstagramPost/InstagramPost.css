@@ -3,11 +3,11 @@
     background-size: cover;
     position: relative;
 }
-.InstagramPost-main:after {
+/* .InstagramPost-main:after {
     content: '';
     display: block;
     padding-bottom: 100%;
-}
+} */
 .Instagram-hoverfilter{
     height: 100%;
     width: 100%;
@@ -16,7 +16,13 @@
     justify-content: center;
     align-items: center;
     position: absolute;
+    top: 0;
+    left: 0;
 }
 .hidden {
     display: none;
+}
+.insta-photos{
+    width: 100%;
+    height: auto;
 }

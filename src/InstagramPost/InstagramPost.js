@@ -24,7 +24,8 @@ class InstagramPost extends Component{
 
     render(){
         return (
-            <div onMouseEnter={()=>this.instaFilter()} onMouseLeave={()=>this.instaLeave()} className="InstagramPost-main" style={{backgroundImage: `url(${this.props.image})`}}>
+            <div onMouseEnter={()=>this.instaFilter()} onMouseLeave={()=>this.instaLeave()} className="InstagramPost-main">
+            <img className="insta-photos" src={`${this.props.image}`}/>
                 <div  className={this.state.hover ? "Instagram-hoverfilter" : "hidden"}>
                     <FontAwesomeIcon icon={faInstagram} color="white" size="2x"/>
                 </div>
