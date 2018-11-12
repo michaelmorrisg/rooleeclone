@@ -29,11 +29,11 @@ class InstagramSection extends Component{
     render(){ 
         return (
             <div className="InstagramSection-main">
-                <InstagramPost image={this.state.instagramPhotos[0]} />
-                <InstagramPost image={this.state.instagramPhotos[1]} />
-                <InstagramPost image={this.state.instagramPhotos[2]} />
-                <InstagramPost image={this.state.instagramPhotos[3]} />
-                <InstagramPost image={this.state.instagramPhotos[4]} />
+                <InstagramPost image={this.state.instagramPhotos[8]} />
+                <InstagramPost image={this.state.instagramPhotos[9]} />
+                <InstagramPost image={this.state.instagramPhotos[10]} />
+                <InstagramPost image={this.state.instagramPhotos[11]} />
+                <InstagramPost image={this.state.instagramPhotos[12]} />
             </div>
         )
     }
