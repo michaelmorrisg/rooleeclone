@@ -48,7 +48,7 @@ setInterval(getFromInsta,600000)
 
 
 app.get('/api/insta', (req,res)=>{
-    // console.log(instaPhotos)
+    console.log('hit')
     res.status(200).send(instaPhotos)
         })
        
