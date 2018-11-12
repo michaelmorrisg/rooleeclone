@@ -19,7 +19,7 @@ class InstagramSection extends Component{
 
     componentDidMount(){
         axios.get('/api/insta').then(res => {
-            console.log(res.data, 'me')
+            console.log(res, 'me')
             this.setState({
                 instagramPhotos : res.data
             })
