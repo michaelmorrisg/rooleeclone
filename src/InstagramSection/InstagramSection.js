@@ -18,7 +18,7 @@ class InstagramSection extends Component{
     }
 
     componentDidMount(){
-        axios.get('http://142.93.80.53:3045/api/insta').then(res => {
+        axios.get('https://server.greyhousemarket.com/api/insta').then(res => {
             console.log(res, 'me')
             this.setState({
                 instagramPhotos : res.data
