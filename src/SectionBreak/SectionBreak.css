@@ -24,4 +24,7 @@
     .SectionBreak-lineTwo {
         font-size: 18pt;
     }
+    #mobile-hidden {
+        display: none;
+    }
 }

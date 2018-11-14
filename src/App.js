@@ -205,7 +205,7 @@ class App extends Component {
         <GoldenBorder />
         <MainImage image={familyBusiness}/>
         <GoldenBorder />
-        <SectionBreak lineOne="recently on" lineTwo="@ROOLEE"/>
+        <SectionBreak id="mobile-hidden" lineOne="recently on" lineTwo="@ROOLEE"/>
         <InstagramSection />
         <GoldenBorder full={true}/>
         <SignUpNow />
