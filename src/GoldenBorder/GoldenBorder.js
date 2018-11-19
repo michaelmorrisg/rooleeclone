@@ -3,6 +3,6 @@ import './GoldenBorder.css'
 
 export default function GoldenBorder(props){
     return(
-        <div className="GoldenBorder-main" style={props.full ? {width:'100%'} : {}}></div>
+        <div id={props.id ? props.id : ''} className="GoldenBorder-main" style={props.full ? {width:'100%'} : {}}></div>
     )
 }
