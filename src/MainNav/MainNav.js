@@ -42,7 +42,7 @@ class MainNav extends Component {
                             <li className={this.props.screenWidth < 1080 ? "MainNav-hidden" : ''}>FAQS</li>
                             <li onMouseEnter={()=>this.props.expandMore()} onMouseLeave={()=>this.props.shrinkMore()}>MORE</li>
                         </ul>
-                        <MoreDropDown moreExpanded={this.props.moreExpanded} screenWidth={this.props.screenWidth}/>
+                        <MoreDropDown moreExpanded={this.props.moreExpanded} screenWidth={this.props.screenWidth} expand={this.props.expandMore} shrink={this.props.shrinkMore}/>
                     </nav>
                 </div>
             </div>
