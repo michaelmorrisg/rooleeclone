@@ -61,8 +61,17 @@ class App extends Component {
       shoesExpanded : false,
       momExpanded: false,
       homeExpanded: false,
-      giftsExpanded: false
+      giftsExpanded: false,
+      moreExpanded: false,
+      screenWidth: window.innerWidth
     }
+  }
+  componentDidMount() {
+    window.addEventListener("resize", e => {
+         this.setState({
+             screenWidth: window.innerWidth
+         })
+    });
   }
   expandKids = ()=>{
     this.setState({
@@ -124,6 +133,16 @@ class App extends Component {
       giftsExpanded: false
     })
   }
+  expandMore = ()=>{
+    this.setState({
+      moreExpanded: true
+    })
+  }
+  shrinkMore = ()=>{
+    this.setState({
+      moreExpanded: false
+    })
+  }
   render() {
     return (
       <div className="App">
@@ -145,6 +164,10 @@ class App extends Component {
         shrinkHome={this.shrinkHome}
         expandGifts={this.expandGifts}
         shrinkGifts={this.shrinkGifts}
+        expandMore={this.expandMore}
+        shrinkMore={this.shrinkMore}
+        moreExpanded={this.state.moreExpanded}
+        screenWidth={this.state.screenWidth}
         />
         {/* KIDS DROPDOWN */}
         <Dropdown 
