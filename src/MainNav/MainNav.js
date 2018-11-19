@@ -38,16 +38,16 @@ class MainNav extends Component {
                 <div className="MainNav-row3">
                     <nav>
                         <ul>
-                            <li style={{paddingLeft: "0px"}}>NEW</li>
-                            <li onMouseEnter={()=>this.props.expandClothing()} onMouseLeave={()=>this.props.shrinkClothing()}>CLOTHING</li>
-                            <li onMouseEnter={()=>this.props.expandShoes()} onMouseLeave={()=>this.props.shrinkShoes()}>SHOES + ACCESSORIES</li>
-                            <li>OUTFITS</li>
-                            <li onMouseEnter={()=>this.props.expandMom()} onMouseLeave={()=>this.props.shrinkMom()}>MOM</li>
-                            <li onMouseEnter={()=>this.props.expandKids()} onMouseLeave={()=>this.props.shrinkKids()}>KIDS</li>
-                            <li onMouseEnter={()=>this.props.expandHome()} onMouseLeave={()=>this.props.shrinkHome()}>HOUSE + HOME</li>
-                            <li>SALE</li>
-                            <li onMouseEnter={()=>this.props.expandGifts()} onMouseLeave={()=>this.props.shrinkGifts()}>GIFTS</li>
-                            <li>FAQS</li>
+                            <li style={{paddingLeft: "0px", width: "30px",minWidth: "30px"}}>NEW</li>
+                            <li style={{width: "68px",minWidth: "68px"}} onMouseEnter={()=>this.props.expandClothing()} onMouseLeave={()=>this.props.shrinkClothing()}>CLOTHING</li>
+                            <li style={{width: "154px",minWidth: "154px"}} onMouseEnter={()=>this.props.expandShoes()} onMouseLeave={()=>this.props.shrinkShoes()}>SHOES + ACCESSORIES</li>
+                            <li style={{width: "56px",minWidth: "56px"}}>OUTFITS</li>
+                            <li style={{width: "33px",minWidth: "33px"}} onMouseEnter={()=>this.props.expandMom()} onMouseLeave={()=>this.props.shrinkMom()}>MOM</li>
+                            <li style={{width: "30px",minWidth: "30px"}} onMouseEnter={()=>this.props.expandKids()} onMouseLeave={()=>this.props.shrinkKids()}>KIDS</li>
+                            <li className={this.state.screenWidth < 844 ? "MainNav-hidden" : ''} style={{width: "104px",minWidth: "104px"}} onMouseEnter={()=>this.props.expandHome()} onMouseLeave={()=>this.props.shrinkHome()}>HOUSE + HOME</li>
+                            <li className={this.state.screenWidth < 922 ? "MainNav-hidden" : ''}>SALE</li>
+                            <li className={this.state.screenWidth < 1002 ? "MainNav-hidden" : ''} onMouseEnter={()=>this.props.expandGifts()} onMouseLeave={()=>this.props.shrinkGifts()}>GIFTS</li>
+                            <li className={this.state.screenWidth < 1080 ? "MainNav-hidden" : ''}>FAQS</li>
                             <li>MORE</li>
                         </ul>
                     </nav>

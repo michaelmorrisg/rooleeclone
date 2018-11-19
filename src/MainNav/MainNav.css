@@ -60,6 +60,9 @@ a:hover{
 .MainNav-row3 li:nth-child(1){
     margin-left: 0px
 }
+.MainNav-hidden {
+    display: none;
+}
 
 @media(max-width:768px){
 
