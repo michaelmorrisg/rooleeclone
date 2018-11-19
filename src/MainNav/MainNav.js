@@ -7,9 +7,24 @@ import { faShoppingCart, faAngleDown } from '@fortawesome/free-solid-svg-icons'
 library.add(faShoppingCart, faAngleDown)
 
 class MainNav extends Component {
+    constructor(){
+        super()
+        this.state = {
+            screenWidth: 0
+        }
+    }
+
+    componentDidMount() {
+        window.addEventListener("resize", e => {
+             this.setState({
+                 screenWidth: window.innerWidth
+             })
+        });
+      }
 
 
     render(){
+        console.log(this.state.screenWidth)
         return(
             <div className="MainNav-main">
                 <div className="MainNav-row1">
