@@ -10,7 +10,7 @@ class MainNav extends Component {
     constructor(){
         super()
         this.state = {
-            screenWidth: 0
+            screenWidth: window.innerWidth
         }
     }
 
