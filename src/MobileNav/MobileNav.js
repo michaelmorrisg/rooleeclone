@@ -14,16 +14,18 @@ class MobileNav extends Component {
             <div className="MobileNav-main">
                 <div className="MobileNav-item">
                     <div><p>Menu</p></div>
-                    <div style={{marginRight: "10px"}}><FontAwesomeIcon icon="bars" color="black"/></div>
+                    <div style={{marginLeft: "10px"}}><FontAwesomeIcon icon="bars" color="black"/></div>
                 </div>
                 <div className="MobileNav-item">
                     <div><p>Search</p></div>
-                    <div style={{marginRight: "8px"}}><FontAwesomeIcon icon="search" color="black"/></div>
+                    <div style={{marginLeft: "10px"}}><FontAwesomeIcon icon="search" color="black"/></div>
                 </div>
+                <div className="MobileNav-item">
                 <div>sign in</div>
+                </div>
                 <div className="MobileNav-item">
                     <div>My Cart</div>
-                    <div><FontAwesomeIcon icon="shopping-cart" color="black"/></div>
+                    <div style={{marginLeft: "5px"}}><FontAwesomeIcon icon="shopping-cart" color="black"/></div>
                 </div>
             </div>
         )
