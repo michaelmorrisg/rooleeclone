@@ -1,19 +1,35 @@
-import React from 'react'
+import React, {Component} from 'react'
+import "./BottomNavSegment.css"
 
-export default function BottomNavSegment(props){
+class BottomNavSegment extends Component {
+    constructor(props){
+        super()
+        this.state = {
+            listLength: props.list.length,
+            expanded: false
+        }
+    }
+    expand(){
+        this.setState({
+            expanded: !this.state.expanded
+        })
+    }
 
-    return(
-        <div>
-            <div>{props.category}</div>
-            <div>
-                <ul>
-                    {props.list.map((item, i) => {
-                        return (
-                            <li key={i}>{item}</li>
-                        )
-                    })}
-                </ul>
+    render(){
+
+        return(
+            <div className="BottomNavSegment-main" style={{height:this.state.expanded ? `${this.state.listLength * 20}px` : "16px"}} onClick={()=>this.expand()}>
+                <div className="BottomNavSegment-title" >{this.props.category}</div>
+                <div>
+                    <ul>
+                        {this.props.list.map((item, i) => {
+                            return (
+                                <li key={i}>{item}</li>
+                            )
+                        })}
+                    </ul>
+                </div>
             </div>
-        </div>
-    )
-}
+        )
+    }
+} export default BottomNavSegment

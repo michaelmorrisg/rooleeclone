@@ -1,0 +1,12 @@
+.BottomNavSegment-main li {
+    color: #d69b57;
+}
+.BottomNavSegment-main {
+    overflow: hidden;
+    border-bottom: 1px solid #d69b57;
+    padding: 10px;
+    transition: .2s;
+}
+.BottomNavSegment-title {
+    padding-bottom: 10px;
+}
