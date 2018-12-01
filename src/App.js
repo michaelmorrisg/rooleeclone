@@ -25,6 +25,7 @@ import MobileNav from './MobileNav/MobileNav'
 import MobileTitle from './MobileTitle/MobileTitle'
 import MobileCategories from './MobileCategories/MobileCategories'
 import MobileSignUpNow from './MobileSignUpNow/MobileSignUpNow'
+import BottomNav from './BottomNav/BottomNav'
 //Images//
 import bottoms from './Assets/carousel-bottoms.jpg'
 import dresses from './Assets/carousel-dresses.jpg'
@@ -234,6 +235,7 @@ class App extends Component {
         <SignUpNow />
         <MobileSignUpNow />
         <GoldenBorder full={true}/>
+        <BottomNav />
         <TalkToUs/>
         <GoldenBorder full={true}/>
         <Footer />
