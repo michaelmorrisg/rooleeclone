@@ -9,4 +9,9 @@
 }
 .BottomNavSegment-title {
     padding-bottom: 10px;
+    float: left;
+}
+.BottomNavSegment-main ul {
+    padding-top: 30px;
+    text-align: initial;
 }
