@@ -8,7 +8,7 @@ export default function SecondaryCategories(){
         <div className="SecondaryCategories-main">
             <div>
             <img src={kids} />
-                <button style={{marginLeft: "-85.5px"}}>SHOP KIDS</button>
+                <button style={{marginLeft: "-85.5px"}} id="shopKids-button">SHOP KIDS</button>
             </div>
             <div>
             <img src={home}/>
