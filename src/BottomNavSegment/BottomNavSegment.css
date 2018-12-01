@@ -1,5 +1,6 @@
 .BottomNavSegment-main li {
     color: #d69b57;
+    font-size: 16px;
 }
 .BottomNavSegment-main {
     overflow: hidden;
@@ -10,8 +11,11 @@
 .BottomNavSegment-title {
     padding-bottom: 10px;
     float: left;
+    padding-left: 30px;
 }
 .BottomNavSegment-main ul {
     padding-top: 30px;
     text-align: initial;
+    padding-left: 30px;
+    line-height: 1.4;
 }
