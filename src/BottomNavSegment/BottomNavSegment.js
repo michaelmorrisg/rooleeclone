@@ -18,7 +18,7 @@ class BottomNavSegment extends Component {
     render(){
 
         return(
-            <div className="BottomNavSegment-main" style={{height:this.state.expanded ? "auto" : "16px"}}>
+            <div className="BottomNavSegment-main" style={{height:this.state.expanded ? this.props.height : "16px"}}>
                 <div className="BottomNavSegment-title" onClick={()=>this.expand()} ><p>{this.props.category}</p></div>
                 <div>
                     <ul>

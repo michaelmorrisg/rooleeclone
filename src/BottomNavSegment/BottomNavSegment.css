@@ -6,7 +6,7 @@
     overflow: hidden;
     border-bottom: 1px solid #d69b57;
     padding: 10px;
-    transition: .2s;
+    transition: height .2s;
 }
 .BottomNavSegment-title {
     padding-bottom: 10px;
