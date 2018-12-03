@@ -5,6 +5,7 @@ class MobileMenu extends Component {
 
 
     render(){
+
         return(
             <div className="MobileMenu-main" style={{display: this.props.expanded ? "block" : "none"}}>Menu</div>
         )

@@ -152,7 +152,11 @@ class App extends Component {
         menuExpanded: !this.state.menuExpanded
       }
     })
-    console.log(this.state.menuExpanded)
+    if(!this.state.menuExpanded){
+      window.onscroll = function () { window.scrollTo(0, 0); };
+    } else {
+      window.onscroll = "disabled"
+    }
 }
   render() {
     return (
