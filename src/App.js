@@ -26,6 +26,7 @@ import MobileTitle from './MobileTitle/MobileTitle'
 import MobileCategories from './MobileCategories/MobileCategories'
 import MobileSignUpNow from './MobileSignUpNow/MobileSignUpNow'
 import BottomNav from './BottomNav/BottomNav'
+import MobileMenu from './MobileMenu/MobileMenu'
 //Images//
 import bottoms from './Assets/carousel-bottoms.jpg'
 import dresses from './Assets/carousel-dresses.jpg'
@@ -64,7 +65,8 @@ class App extends Component {
       homeExpanded: false,
       giftsExpanded: false,
       moreExpanded: false,
-      screenWidth: window.innerWidth
+      screenWidth: window.innerWidth,
+      menuExpanded: false
     }
   }
   componentDidMount() {
@@ -144,13 +146,22 @@ class App extends Component {
       moreExpanded: false
     })
   }
+  expandMenu = ()=>{
+    this.setState(function(state,props){
+      return {
+        menuExpanded: !this.state.menuExpanded
+      }
+    })
+    console.log(this.state.menuExpanded)
+}
   render() {
     return (
       <div className="App">
         <ChatBubble />
         <UpArrowButton />
         <TopMessage />
-        <MobileNav/>
+        <MobileNav expandMenu = {this.expandMenu} />
+        <MobileMenu expanded = {this.state.menuExpanded}/>
         <MobileTitle/>
         <MainNav 
         expandKids={this.expandKids} 

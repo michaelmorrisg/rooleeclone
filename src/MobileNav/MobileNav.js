@@ -12,7 +12,7 @@ class MobileNav extends Component {
     render(){
         return(
             <div className="MobileNav-main">
-                <div className="MobileNav-item">
+                <div className="MobileNav-item" onClick={()=>this.props.expandMenu()}>
                     <div><p>Menu</p></div>
                     <div style={{marginLeft: "10px"}}><FontAwesomeIcon icon="bars" color="black"/></div>
                 </div>

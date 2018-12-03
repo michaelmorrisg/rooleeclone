@@ -1,0 +1,8 @@
+.MobileMenu-main {
+    width: 100%;
+    background-color: rgba(255,255,255,0.95);
+    height: calc(100vh - 86px);
+    position: absolute;
+    z-index: 11;
+    top: 88px;
+}
