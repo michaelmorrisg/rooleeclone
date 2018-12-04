@@ -9,10 +9,20 @@
 }
 .MobileMenu-main p {
     margin-left: 30px;
-    margin-top: 15px;
+    margin-bottom: 15px;
     font-size: 16px;
     font-style: normal !important;
     font-family: 'Raleway', sans-serif;
     color: #d69b5c;
     font-weight: 700p;
+}
+.MobileMenu-main ul {
+    overflow: hidden;
+    transition: height .2s;
+}
+.MobileMenu-main li {
+    color: #d69b5c;
+    font-style: italic;
+    margin-left: 40px;
+    line-height: 1.5;
 }

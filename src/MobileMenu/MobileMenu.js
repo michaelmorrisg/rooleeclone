@@ -51,8 +51,8 @@ class MobileMenu extends Component {
         return(
             <div className="MobileMenu-main" style={{display: this.props.expanded ? "block" : "none"}}>
                 <p><a href="">NEW</a></p>
-                <p>CLOTHING</p>
-                <ul>
+                <p onClick={()=>this.expandClothing()}>CLOTHING</p>
+                <ul style={{height: this.state.clothing ? "270px" : "0px"}}>
                     <li>New Arrivals</li>
                     <li>Tops</li>
                     <li>Bottoms</li>
@@ -64,8 +64,8 @@ class MobileMenu extends Component {
                     <li>Sale</li>
                     <li>Back in Stock</li>
                 </ul>
-                <p>SHOES + ACCESSORIES</p>
-                <ul>
+                <p onClick={()=>this.expandShoes()}>SHOES + ACCESSORIES</p>
+                <ul style={{height: this.state.shoes ? "210px" : "0px"}}>
                     <li>New Arrivals</li>
                     <li>Bandanas + Hair</li>
                     <li>Shoes</li>
@@ -76,27 +76,27 @@ class MobileMenu extends Component {
                     <li>Other</li>
                 </ul>
                 <p><a href="">OUTFITS</a></p>
-                <p>MOM</p>
-                <ul>
+                <p onClick={()=>this.expandMom()}>MOM</p>
+                <ul style={{height: this.state.mom ? "90px" : "0px"}}>
                     <li>ROOLEE MOM</li>
                     <li>Nursing Friendly</li>
                     <li>Accessories</li>
                 </ul>
-                <p>KIDS</p>
-                <ul>
+                <p onClick={()=>this.expandKids()}>KIDS</p>
+                <ul style={{height: this.state.kids ? "110px" : "0px"}}>
                     <li>New Kids</li>
                     <li>Boys</li>
                     <li>Girls</li>
                     <li>Bedding</li>
                 </ul>
-                <p>HOUSE + HOME</p>
-                <ul>
+                <p onClick={()=>this.expandHome()}>HOUSE + HOME</p>
+                <ul style={{height: this.state.home ? "90px" : "0px"}}>
                     <li>New Arrivals</li>
                     <li>Home Decor</li>
                     <li>Paper + Party</li>
                 </ul>
-                <p>GIFTS</p>
-                <ul>
+                <p onClick={()=>this.expandGifts()}>GIFTS</p>
+                <ul style={{height: this.state.gifts ? "110px" : "0px"}}>
                     <li>Gift Cards</li>
                     <li>Womens Gifts</li>
                     <li>Mens Gifts</li>
