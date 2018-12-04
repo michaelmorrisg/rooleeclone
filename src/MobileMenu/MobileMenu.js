@@ -50,6 +50,9 @@ class MobileMenu extends Component {
 
         return(
             <div className="MobileMenu-main" style={{display: this.props.expanded ? "block" : "none"}}>
+                <br />
+                <br />
+                <br />
                 <p><a href="">NEW</a></p>
                 <p onClick={()=>this.expandClothing()}>CLOTHING</p>
                 <ul style={{height: this.state.clothing ? "270px" : "0px"}}>
