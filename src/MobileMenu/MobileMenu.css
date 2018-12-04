@@ -5,4 +5,12 @@
     position: absolute;
     z-index: 11;
     top: 88px;
+    text-align: left;
+}
+.MobileMenu-main p {
+    margin-left: 30px;
+    margin-top: 15px;
+    font-size: 16px;
+    font-style: normal !important;
+    font-family: 'Raleway', sans-serif;
 }
