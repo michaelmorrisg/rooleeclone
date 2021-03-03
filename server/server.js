@@ -9,7 +9,11 @@ const app = express()
 app.use(bodyParser.json())
 
 app.listen(3045, ()=>{
-    console.log('listening on port 3045')
+    console.log('listening on port 3045');
+    getFromInsta();
+    //Updates Insta Photos every half hour
+
+    setInterval(getFromInsta,600000)
 })
 
 
@@ -30,25 +34,18 @@ function getFromInsta(){
             let tempArr = []
             $('img', html).each(function(){
     
-                let test = $(this).attr('src')
-
-                    tempArr.push(test)
+                let photo = $(this).attr('src')
+                    tempArr.push(photo)
                 instaPhotos = tempArr
             })
             })
     })
 }
-getFromInsta()
-
-
-//Updates Insta Photos every half hour
-
-setInterval(getFromInsta,600000)
 
 
 
 app.get('/api/insta', (req,res)=>{
-    console.log('hit')
+    res.header("Access-Control-Allow-Origin", "*")
     res.status(200).send(instaPhotos)
         })
        

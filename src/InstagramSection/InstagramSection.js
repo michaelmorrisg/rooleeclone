@@ -7,7 +7,6 @@ import insta2 from '../Assets/Insta2.jpg'
 import insta3 from '../Assets/Insta3.jpg'
 import insta4 from '../Assets/Insta4.jpg'
 import insta5 from '../Assets/Insta5.jpg'
-import { ENGINE_METHOD_DIGESTS } from 'constants';
 
 class InstagramSection extends Component{
     constructor(){
@@ -18,8 +17,7 @@ class InstagramSection extends Component{
     }
 
     componentDidMount(){
-        axios.get('https://server.greyhousemarket.com/api/insta').then(res => {
-            console.log(res, 'me')
+        axios.get('http://192.168.0.14:3045/api/insta').then(res => {
             this.setState({
                 instagramPhotos : res.data
             })
@@ -29,11 +27,11 @@ class InstagramSection extends Component{
     render(){ 
         return (
             <div className="InstagramSection-main">
-                <InstagramPost image={this.state.instagramPhotos[8]} />
-                <InstagramPost image={this.state.instagramPhotos[9]} />
-                <InstagramPost image={this.state.instagramPhotos[10]} />
                 <InstagramPost image={this.state.instagramPhotos[11]} />
                 <InstagramPost image={this.state.instagramPhotos[12]} />
+                <InstagramPost image={this.state.instagramPhotos[13]} />
+                <InstagramPost image={this.state.instagramPhotos[14]} />
+                <InstagramPost image={this.state.instagramPhotos[15]} />
             </div>
         )
     }
