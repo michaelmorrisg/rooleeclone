@@ -48,6 +48,7 @@
 .slide-container > div > img {
     width: 95%;
     height: auto;
+    max-height: 325px;
 }
 .slide-container button {
     position: absolute;
