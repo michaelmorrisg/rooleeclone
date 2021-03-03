@@ -10,16 +10,7 @@
       {
         "source": "**",
         "destination": "/index.html"
-      },
-      {
-        "source": "/api/insta",
-        "function": "getInsta"
       }
-    ]
-  },
-  "functions": {
-    "predeploy": [
-      "npm --prefix \"$RESOURCE_DIR\" run lint"
     ]
   }
 }
